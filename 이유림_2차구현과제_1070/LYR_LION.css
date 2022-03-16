@@ -1,0 +1,40 @@
+/* web font */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+  font-family: 'nanumgothic';
+  font-size: 13pt;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #fff;
+  height: 100vh;
+}
+.login {
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.header {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+  padding: 10px;
+}
+.header h5 {
+  text-align: center;
+  font-weight: normal;
+}
+.login-type {
+  text-align: center;
+}
+.login-type h1 {
+  font-family: 44px;
+  text-align: center;
+  font-weight: normal;
+}
