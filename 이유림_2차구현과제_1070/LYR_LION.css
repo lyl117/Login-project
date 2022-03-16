@@ -4,17 +4,20 @@
 body {
   font-family: 'nanumgothic';
   font-size: 13pt;
-  color: #222;
+  color: rgb(121, 121, 121);
   margin: 0;
   padding: 0;
 }
 
+/* Layout css */
 .container {
   background-color: #fff;
   height: 100vh;
 }
 .login {
   width: 360px;
+
+  /* Center Layout */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -26,15 +29,132 @@ body {
   background-color: #fff;
   padding: 10px;
 }
-.header h5 {
+.header h5:before {
   text-align: center;
   font-weight: normal;
+  text-align: center;
+  color: black;
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  background-color: rgb(121, 121, 121);
+  width: 100%;
+  border-width:thin;
+  height: 1px;
 }
 .login-type {
   text-align: center;
 }
 .login-type h1 {
-  font-family: 44px;
-  text-align: center;
+  font-family: 24px;
+  text-align: start;
   font-weight: normal;
+  color: black;
 }
+.login-type img {
+  vertical-align: middle;
+}
+.login-type .loginimage {
+  text-align: start;
+}
+.login-type .signup {
+  text-align: center;
+  text-decoration: none;
+  bottom:70px;
+}
+
+.or-txt {
+  display: block;
+  margin: 15px 0;
+  position: relative;
+}
+.or-txt:before {
+ content: '';
+ position: absolute;
+ top: 7px;
+ left: 0px;
+ background-color: rgb(165, 165, 165);
+ width: 44%;
+ height: 1px;
+}
+.or-txt:after{
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  background-color: rgb(165, 165, 165);
+  width: 44%;
+  height: 1px;
+ }
+
+/* Button css */
+a.btn {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid lightgray;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 16px;
+  color: rgb(121, 121, 121);
+  padding: 15px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  position: relative;
+}
+a.btn:hover {
+  opacity: 1;
+}
+
+a.btn1 {
+  background-color: rgb(0, 119, 255);
+  color: #fff;
+  border-radius: 6px;
+}
+a.btn2 {
+  background-color: #fff;
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 6px;
+}
+a.btn3 {
+  background-color: #fff;
+  border: 1px solid rgb(0, 145, 255);
+  border-radius: 6px;
+}
+a.btn4 {
+  background-color: #fff;
+  border: 1px solid rgb(2, 210, 26);
+  border-radius: 6px;
+}
+a.btn5 {
+  background-color: #fff;
+  border: 1px solid rgb(235, 216, 3);
+  border-radius: 6px;
+}
+
+a.btn2:before {
+  content: url(icon_google.png);
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+a.btn3:before {
+  content: url(icon_facebook.png);
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+a.btn4:before {
+  content: url(icon_naver.png);
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+a.btn5:before {
+  content: url(icon_kakao.png);
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+
