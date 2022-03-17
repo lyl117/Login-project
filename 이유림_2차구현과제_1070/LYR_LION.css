@@ -86,25 +86,30 @@ body {
 
 .login-type div ul li {
   position: relative;
-  padding: 0 18px;
+  padding: 0 18px ;
   top: 20px;
+
 }
 
-/* .login-type div ul li ::after {
+.login-type div ul li~li ::after{
   content: ""; 
   position: absolute; 
-  right: 0px;
-  top: 0px; 
+  left: 0px; 
+  top: 2px; 
   height:14px; 
   width: 1px; 
   background: rgb(121, 121, 121);
   transform: rotate(0deg);
-} */
-.login-type div ul li~li ::before {
+}
+.login-type div ul li~li~li ::after{
+  display: none;
+}
+
+.login-type div ul li~li~li ::before {
   content: ""; 
   position: absolute; 
   left: 0px; 
-  top: 4px; 
+  top: 2px; 
   height:14px; 
   width: 1px; 
   background: rgb(121, 121, 121);
