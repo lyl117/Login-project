@@ -7,23 +7,44 @@
   <title>login page</title>
   <link rel="stylesheet" href="LYR_LION.css">
   <link rel="short icon" href="icon_naver.png">
+  <script src="./LYR_LION.js"></script>
 </head>
+<style>
+  /* 로그인 상태 유지 */
+  input[type=checkbox] { display: none; }
+  input[type=checkbox] + label {
+      display: inline-block;
+      cursor: pointer;
+      line-height: 30px;
+      padding-left: 28px;
+      background: url('./icon_check_empty.png') left/25px no-repeat ;
+  }
+  input[type=checkbox]:checked + label { 
+      background-image: url('./icon_check.png');
+  }
+  </style>
 <body>
   <div class="container">
       <div class="inner">
           <div class="header">
             <h5>로그인 또는 회원가입</h5>
+            <input type="button" class="img-button">
           </div>
           <div class="login">
             <div class="login-type">
-              <h1>위니브에서 여러분의 궁금증을 해결하세요!:)</h1>
+              <h3>위니브에서 여러분의 궁금증을 해결하세요!:)</h3>
               <p class="loginimage">
-                <img src="icon_check_empty.png"> 로그인 상태 유지
+                <!-- <img src="icon_check_empty.png" id="img"> 로그인 상태 유지 -->
+                <input type="checkbox" id="box1"><label for="box1">&nbsp;로그인 상태 유지</label>
               </p>
               <a class="btn btn1" href="">로그인</a>
-              <p class="signup">
-                <a>회원가입 | 아이디/비밀번호 찾기</a>
-              </p>
+              <div>
+                <ul>
+                <li><a href="" >회원가입</a></li>
+                <li><a href="" >아이디</a></li>
+                <li><a href="" >비밀번호 찾기</a></li>
+                </ul>
+            </div>
               <span class ="or-txt">또는</span>
             </div>
             <div class="footer">

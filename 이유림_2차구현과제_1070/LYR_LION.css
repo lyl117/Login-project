@@ -15,7 +15,7 @@ body {
   height: 100vh;
 }
 .login {
-  width: 360px;
+  width: 450px;
 
   /* Center Layout */
   position: absolute;
@@ -43,10 +43,21 @@ body {
   border-width:thin;
   height: 1px;
 }
+.header .img-button {
+  position: fixed;
+  top: 30px;
+  bottom: 10px;
+  right: 1rem;
+  background: url( "close.png" ) no-repeat;
+  border: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer; 
+}
 .login-type {
   text-align: center;
 }
-.login-type h1 {
+.login-type h3 {
   font-family: 24px;
   text-align: start;
   font-weight: normal;
@@ -57,17 +68,85 @@ body {
 }
 .login-type .loginimage {
   text-align: start;
-}
-.login-type .signup {
-  text-align: center;
-  text-decoration: none;
-  bottom:70px;
+  font-size: 15px;
 }
 
+.login-type div {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 0 45px;
+}
+
+.login-type div ul {
+  display: flex; 
+  justify-content: center;
+  list-style:none;
+  padding-left:0px;
+}
+
+.login-type div ul li {
+  position: relative;
+  padding: 0 18px;
+  top: 20px;
+}
+
+/* .login-type div ul li ::after {
+  content: ""; 
+  position: absolute; 
+  right: 0px;
+  top: 0px; 
+  height:14px; 
+  width: 1px; 
+  background: rgb(121, 121, 121);
+  transform: rotate(0deg);
+} */
+.login-type div ul li~li ::before {
+  content: ""; 
+  position: absolute; 
+  left: 0px; 
+  top: 4px; 
+  height:14px; 
+  width: 1px; 
+  background: rgb(121, 121, 121);
+  transform: rotate(25deg);
+}
+
+.login-type div ul li a {
+  font-size: 14px; 
+  color:rgb(121, 121, 121);
+}
+
+a:link {
+  text-decoration: none!important;
+}
+a:visited {
+  color:rgb(121, 121, 121);
+}
+
+.login-type .find-id {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  display:inline;
+  float: left;
+  margin: 5px;
+  
+}
+.login-type .find-pw {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  display:inline;
+  float: left;
+  margin: 5px;
+  
+
+}
 .or-txt {
   display: block;
   margin: 15px 0;
   position: relative;
+  font-size: 14px;
 }
 .or-txt:before {
  content: '';
@@ -110,6 +189,8 @@ a.btn:hover {
 a.btn1 {
   background-color: rgb(0, 119, 255);
   color: #fff;
+  font-weight: bold;
+  font-size: 20px;
   border-radius: 6px;
 }
 a.btn2 {
